@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/background.png-694afb2807fe739c9f0954541e14cf0b.image"
+
+[deps]
+
+source_file="res://art/background.png"
+dest_files=[ "res://.import/background.png-694afb2807fe739c9f0954541e14cf0b.image" ]
+
+[params]
+

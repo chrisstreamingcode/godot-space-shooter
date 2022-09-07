@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://art/battery.png" type="Texture" id=1]
+[ext_resource path="res://Battery.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8, 20 )
+
+[node name="Battery" type="Area2D" groups=["fire_rate_powerup"]]
+position = Vector2( 502, 280 )
+collision_layer = 8
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+
+[connection signal="area_entered" from="." to="." method="_on_Battery_area_entered"]
